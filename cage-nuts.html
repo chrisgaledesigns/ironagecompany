@@ -24,6 +24,7 @@
       <a href="full-size-jeep.html">Full Size Jeep</a>
       <a href="yamaha.html">Yamaha</a>
       <a href="how-to-order.html">How To Order</a>
+          <a class="cart-link" href="cart.html">Cart<span id="cart-count" class="cart-badge">0</span></a>
     </nav>
   </div>
 </header>
@@ -87,23 +88,55 @@
     <div class="plate" style="padding:0; overflow-x:auto;">
       <table class="spec">
         <thead>
-          <tr><th>Part #</th><th>Description</th><th>Thread</th><th class="price">Price</th></tr>
+          <tr><th>Part #</th><th>Description</th><th>Thread</th><th class="price">Price</th><th>Qty</th><th></th></tr>
         </thead>
         <tbody>
-          <tr><td class="part">CN250S</td><td>Cage Nut — Spot Weld</td><td>1/4 x 20</td><td class="price">$3.95 ea + S&amp;H</td></tr>
-          <tr><td class="part">CN312S</td><td>Cage Nut — Spot Weld</td><td>5/16 x 18</td><td class="price">$4.95 ea + S&amp;H</td></tr>
-          <tr><td class="part">CN375S</td><td>Cage Nut — Spot Weld</td><td>3/8 x 16</td><td class="price">$5.95 ea + S&amp;H</td></tr>
-          <tr><td class="part">CN437S</td><td>Cage Nut — Spot Weld</td><td>7/16 x 14</td><td class="price">$6.95 ea + S&amp;H</td></tr>
-          <tr><td class="part">CN250P</td><td>Cage Nut — Plug Weld</td><td>1/4 x 20</td><td class="price">$4.79 ea + S&amp;H</td></tr>
-          <tr><td class="part">CN312P</td><td>Cage Nut — Plug Weld</td><td>5/16 x 18</td><td class="price">$5.79 ea + S&amp;H</td></tr>
-          <tr><td class="part">CN375P</td><td>Cage Nut — Plug Weld</td><td>3/8 x 16</td><td class="price">$6.79 ea + S&amp;H</td></tr>
-          <tr><td class="part">CN437P</td><td>Cage Nut — Plug Weld</td><td>7/16 x 14</td><td class="price">Call for pricing</td></tr>
+          <tr>
+            <td class="part">CN250S</td><td>Cage Nut — Spot Weld</td><td>1/4 x 20</td><td class="price">$3.95 ea + S&amp;H</td>
+            <td><input type="number" min="1" value="1" class="qty-input" data-qty-for="CN250S"></td>
+            <td><button type="button" class="btn-add" data-add-to-cart data-id="CN250S" data-name="Cage Nut — Spot Weld, 1/4 x 20" data-price="3.95">Add</button></td>
+          </tr>
+          <tr>
+            <td class="part">CN312S</td><td>Cage Nut — Spot Weld</td><td>5/16 x 18</td><td class="price">$4.95 ea + S&amp;H</td>
+            <td><input type="number" min="1" value="1" class="qty-input" data-qty-for="CN312S"></td>
+            <td><button type="button" class="btn-add" data-add-to-cart data-id="CN312S" data-name="Cage Nut — Spot Weld, 5/16 x 18" data-price="4.95">Add</button></td>
+          </tr>
+          <tr>
+            <td class="part">CN375S</td><td>Cage Nut — Spot Weld</td><td>3/8 x 16</td><td class="price">$5.95 ea + S&amp;H</td>
+            <td><input type="number" min="1" value="1" class="qty-input" data-qty-for="CN375S"></td>
+            <td><button type="button" class="btn-add" data-add-to-cart data-id="CN375S" data-name="Cage Nut — Spot Weld, 3/8 x 16" data-price="5.95">Add</button></td>
+          </tr>
+          <tr>
+            <td class="part">CN437S</td><td>Cage Nut — Spot Weld</td><td>7/16 x 14</td><td class="price">$6.95 ea + S&amp;H</td>
+            <td><input type="number" min="1" value="1" class="qty-input" data-qty-for="CN437S"></td>
+            <td><button type="button" class="btn-add" data-add-to-cart data-id="CN437S" data-name="Cage Nut — Spot Weld, 7/16 x 14" data-price="6.95">Add</button></td>
+          </tr>
+          <tr>
+            <td class="part">CN250P</td><td>Cage Nut — Plug Weld</td><td>1/4 x 20</td><td class="price">$4.79 ea + S&amp;H</td>
+            <td><input type="number" min="1" value="1" class="qty-input" data-qty-for="CN250P"></td>
+            <td><button type="button" class="btn-add" data-add-to-cart data-id="CN250P" data-name="Cage Nut — Plug Weld, 1/4 x 20" data-price="4.79">Add</button></td>
+          </tr>
+          <tr>
+            <td class="part">CN312P</td><td>Cage Nut — Plug Weld</td><td>5/16 x 18</td><td class="price">$5.79 ea + S&amp;H</td>
+            <td><input type="number" min="1" value="1" class="qty-input" data-qty-for="CN312P"></td>
+            <td><button type="button" class="btn-add" data-add-to-cart data-id="CN312P" data-name="Cage Nut — Plug Weld, 5/16 x 18" data-price="5.79">Add</button></td>
+          </tr>
+          <tr>
+            <td class="part">CN375P</td><td>Cage Nut — Plug Weld</td><td>3/8 x 16</td><td class="price">$6.79 ea + S&amp;H</td>
+            <td><input type="number" min="1" value="1" class="qty-input" data-qty-for="CN375P"></td>
+            <td><button type="button" class="btn-add" data-add-to-cart data-id="CN375P" data-name="Cage Nut — Plug Weld, 3/8 x 16" data-price="6.79">Add</button></td>
+          </tr>
+          <tr>
+            <td class="part">CN437P</td><td>Cage Nut — Plug Weld</td><td>7/16 x 14</td><td class="price">Call for pricing</td>
+            <td colspan="2" class="mono" style="color:var(--steel-dim); font-size:.8rem;">Contact us to order</td>
+          </tr>
         </tbody>
       </table>
     </div>
 
     <div style="margin-top:22px; display:flex; gap:12px; flex-wrap:wrap;">
-      <a class="btn" href="how-to-order.html">How To Order</a>
+      <a class="btn" href="cart.html">View Cart</a>
+      <a class="btn ghost" href="how-to-order.html">Other Ways To Order</a>
     </div>
   </div>
 </section>
@@ -127,6 +160,7 @@
         <a href="gallery.html">Gallery</a>
         <a href="full-size-jeep.html">Full Size Jeep</a>
         <a href="how-to-order.html">How To Order</a>
+        <a href="cart.html">Cart</a>
       </div>
       <div>
         <h4>Contact</h4>
@@ -141,5 +175,6 @@
   </div>
 </footer>
 
+<script src="js/cart.js"></script>
 </body>
 </html>

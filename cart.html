@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart — Iron Age Company</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav-bar">
+    <a class="brand" href="index.html" style="text-decoration:none;">
+      <span class="mark">IA</span>
+      <span class="name">IRON AGE CO.<small>SHEET METAL FABRICATION</small></span>
+    </a>
+    <nav class="primary">
+      <a href="index.html">About</a>
+      <a href="reference.html">Reference</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="cage-nuts.html">Cage Nuts</a>
+      <a href="dish-bowls.html">Dish Bowls</a>
+      <a href="skwayers.html">Skwayers</a>
+      <a href="full-size-jeep.html">Full Size Jeep</a>
+      <a href="yamaha.html">Yamaha</a>
+      <a href="how-to-order.html">How To Order</a>
+      <a class="cart-link active" href="cart.html">Cart<span id="cart-count" class="cart-badge">0</span></a>
+    </nav>
+  </div>
+</header>
+
+<div class="hazard"></div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Checkout</div>
+    <h1>Your Cart</h1>
+    <p class="sub">Review your order below, then check out securely with PayPal. Shipping and any applicable sales tax are calculated on the next step.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Order Summary</h2>
+      <span class="tag">Cart</span>
+    </div>
+
+    <div id="cart-page"><!-- populated by js/cart.js --></div>
+
+    <div style="margin-top:22px; display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
+      <button id="checkout-btn" class="btn" type="button" style="border:none; cursor:pointer; display:none;">Checkout With PayPal</button>
+      <button id="clear-cart-btn" class="btn ghost" type="button" style="border:none; cursor:pointer;">Clear Cart</button>
+      <a class="btn ghost" href="cage-nuts.html">Continue Shopping</a>
+    </div>
+
+    <div class="note" style="margin-top:26px;">
+      <strong>How checkout works.</strong> Clicking "Checkout With PayPal" takes you to PayPal's secure payment page with your order pre-filled. You do not need a PayPal account to pay by credit or debit card. Prefer to order by email or mail a check? See <a href="how-to-order.html">How To Order</a>.
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Iron Age Company</h4>
+        <p style="color:var(--steel-dim); font-size:.9rem; max-width:34ch;">Restoration-quality sheet metal, formed and stamped in Chetek, Wisconsin.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <a href="reference.html">Reference Charts</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="full-size-jeep.html">Full Size Jeep</a>
+        <a href="how-to-order.html">How To Order</a>
+        <a href="cart.html">Cart</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="index.html">Wayne Ayers</a>
+        <a href="index.html">P.O. Box 689, Chetek, WI 54728</a>
+      </div>
+    </div>
+    <div class="fine">
+      The Iron Age Company is an independent business and is not affiliated with Chrysler Group LLC. Jeep and the Jeep logo are registered trademarks of Chrysler Group LLC. Any trademarks or logos used throughout this site are used for identification purposes only and are the property of their respective owners.<br>
+      Copyright © 2013 IronAgeCompany.com. All Rights Reserved. · Iron Age Company, P.O. Box 689, Chetek, WI 54728
+    </div>
+  </div>
+</footer>
+
+<script src="js/cart.js"></script>
+</body>
+</html>

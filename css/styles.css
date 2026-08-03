@@ -326,6 +326,45 @@ footer.site a:hover{ color:var(--orange-bright); }
   border-top:1px solid var(--line); padding-top:18px;
 }
 
+/* ---------- cart: nav icon + badge ---------- */
+.cart-link{
+  display:inline-flex; align-items:center; gap:6px;
+  color:var(--steel);
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.72rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  padding:8px 10px;
+  border:1px solid var(--line);
+  text-decoration:none;
+  margin-left:6px;
+}
+.cart-link:hover{ color:#fff; background:var(--panel); text-decoration:none; }
+.cart-badge{
+  display:none;
+  align-items:center; justify-content:center;
+  min-width:18px; height:18px; padding:0 4px;
+  background:var(--orange-bright); color:#fff;
+  font-family:'IBM Plex Mono',monospace; font-size:.68rem; font-weight:600;
+  border-radius:2px;
+}
+
+/* ---------- cart: add-to-cart controls in pricing tables ---------- */
+.qty-input{
+  width:56px; padding:6px 8px;
+  background:var(--panel); border:1px solid var(--line); color:var(--steel);
+  font-family:'IBM Plex Mono',monospace; font-size:.85rem;
+}
+.qty-input:focus-visible{ outline:2px solid var(--yellow); outline-offset:1px; }
+.btn-add{
+  font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.04em;
+  text-transform:uppercase; padding:8px 14px;
+  border:1px solid var(--orange); background:transparent; color:var(--orange-bright);
+  cursor:pointer; transition:background .15s, color .15s; white-space:nowrap;
+}
+.btn-add:hover{ background:var(--orange); color:#fff; }
+.btn-add:disabled{ opacity:.7; cursor:default; }
+
 /* breadcrumb-ish page kicker inside plates */
 .kicker{
   font-family:'IBM Plex Mono',monospace; font-size:.72rem; color:var(--orange-bright);
